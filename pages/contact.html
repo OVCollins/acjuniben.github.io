@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact ACJ UNIBEN — reach our editorial board, submit a story tip, or get in touch for partnerships." />
+  <title>Contact Us | ACJ UNIBEN</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  <style>
+    .contact-hero { background: var(--navy); padding: 3.5rem 0 2.5rem; border-bottom: 4px solid var(--gold); }
+    .contact-hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; color: var(--white); }
+    .contact-hero p { font-size: 0.88rem; color: rgba(255,255,255,0.6); margin-top: 0.5rem; max-width: 500px; line-height: 1.6; }
+    .contact-form { background: var(--white); border: 1px solid var(--grey-light); padding: 2.5rem; }
+    .contact-form h3 { font-family: var(--font-display); font-size: 1.3rem; font-weight: 900; color: var(--navy); margin-bottom: 1.5rem; border-bottom: 2px solid var(--gold); padding-bottom: 0.75rem; }
+    .contact-tabs { display: flex; gap: 0; margin-bottom: 1.5rem; border-bottom: 1px solid var(--grey-light); }
+    .contact-tab {
+      font-family: var(--font-label);
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      padding: 0.6rem 1.2rem;
+      cursor: pointer;
+      color: var(--grey-mid);
+      border-bottom: 3px solid transparent;
+      margin-bottom: -1px;
+      background: none;
+      transition: all 0.2s;
+    }
+    .contact-tab.active { color: var(--navy); border-bottom-color: var(--gold); }
+    .contact-panel { display: none; }
+    .contact-panel.active { display: block; }
+    .contact-info-card { background: var(--navy); padding: 1.5rem; margin-bottom: 1.2rem; }
+    .contact-info-card h4 { font-family: var(--font-label); font-size: 0.72rem; letter-spacing: 0.15em; color: var(--gold); margin-bottom: 0.75rem; }
+    .contact-info-card p, .contact-info-card a { font-size: 0.84rem; color: rgba(255,255,255,0.75); line-height: 1.6; display: block; }
+    .contact-info-card a:hover { color: var(--gold); }
+    .source-protection { background: #1A0A0A; border: 1px solid rgba(204,34,0,0.3); padding: 1.2rem 1.5rem; margin-bottom: 1.5rem; }
+    .source-protection .sp-label { font-family: var(--font-label); font-size: 0.65rem; letter-spacing: 0.2em; color: var(--red-alert); margin-bottom: 0.4rem; }
+    .source-protection p { font-size: 0.8rem; color: rgba(255,255,255,0.7); line-height: 1.6; }
+    .departments { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem; }
+    @media (max-width: 500px) { .departments { grid-template-columns: 1fr; } }
+    .dept-card { padding: 1rem; background: var(--off-white); border: 1px solid var(--grey-light); }
+    .dept-card h5 { font-family: var(--font-label); font-size: 0.68rem; letter-spacing: 0.12em; color: var(--navy); margin-bottom: 0.3rem; }
+    .dept-card a { font-size: 0.78rem; color: var(--grey-dark); }
+    .dept-card a:hover { color: var(--navy); text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <div class="contact-hero">
+    <div class="container">
+      <span class="section-label gold">Reach Us</span>
+      <h1>Contact ACJ UNIBEN</h1>
+      <p>Get in touch with our editorial board, submit a news tip, pitch a story, or enquire about partnerships and press accreditation.</p>
+    </div>
+  </div>
+
+  <section style="background: var(--off-white);">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- LEFT: CONTACT INFO -->
+        <div>
+          <span class="section-label">Get in Touch</span>
+          <span class="gold-bar"></span>
+
+          <div class="contact-info-card">
+            <h4>Editorial Board</h4>
+            <a href="mailto:editorial@acjuniben.com">editorial@acjuniben.com</a>
+            <p style="margin-top:0.4rem;font-size:0.75rem;color:rgba(255,255,255,0.45);">For story pitches, editorial enquiries, and press releases</p>
+          </div>
+
+          <div class="contact-info-card">
+            <h4>President's Office</h4>
+            <a href="mailto:president@acjuniben.com">president@acjuniben.com</a>
+            <p style="margin-top:0.4rem;font-size:0.75rem;color:rgba(255,255,255,0.45);">For institutional partnerships, media accreditation, and official correspondence</p>
+          </div>
+
+          <div class="contact-info-card">
+            <h4>Membership &amp; General Enquiries</h4>
+            <a href="mailto:hello@acjuniben.com">hello@acjuniben.com</a>
+            <p style="margin-top:0.4rem;font-size:0.75rem;color:rgba(255,255,255,0.45);">For membership questions, training enquiries, and general correspondence</p>
+          </div>
+
+          <div class="contact-detail">
+            <span>📍</span>
+            <div>
+              <label>Location</label>
+              <p>Faculty of Arts Building, University of Benin, Ugbowo Campus, Benin City, Edo State, Nigeria</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span>🕐</span>
+            <div>
+              <label>Editorial Hours</label>
+              <p>Monday – Friday: 10:00am – 4:00pm (during the academic session)</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span>🌐</span>
+            <div>
+              <label>Website</label>
+              <p>www.acjuniben.com</p>
+            </div>
+          </div>
+
+          <div class="departments">
+            <div class="dept-card">
+              <h5>News Desk</h5>
+              <a href="mailto:news@acjuniben.com">news@acjuniben.com</a>
+            </div>
+            <div class="dept-card">
+              <h5>Investigations</h5>
+              <a href="mailto:investigations@acjuniben.com">investigations@acjuniben.com</a>
+            </div>
+            <div class="dept-card">
+              <h5>Multimedia</h5>
+              <a href="mailto:multimedia@acjuniben.com">multimedia@acjuniben.com</a>
+            </div>
+            <div class="dept-card">
+              <h5>Publications</h5>
+              <a href="mailto:publications@acjuniben.com">publications@acjuniben.com</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: CONTACT FORM -->
+        <div>
+          <div class="contact-form">
+            <h3>Send a Message</h3>
+
+            <div class="contact-tabs">
+              <button class="contact-tab active" data-panel="general">General Enquiry</button>
+              <button class="contact-tab" data-panel="pitch" id="pitchTab">Story Tip</button>
+              <button class="contact-tab" data-panel="press">Press / Media</button>
+            </div>
+
+            <!-- GENERAL -->
+            <div class="contact-panel active" id="panel-general">
+              <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Your name" />
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="your@email.com" />
+              </div>
+              <div class="form-group">
+                <label>Subject</label>
+                <input type="text" placeholder="What is your message about?" />
+              </div>
+              <div class="form-group">
+                <label>Message</label>
+                <textarea rows="5" placeholder="Write your message here…"></textarea>
+              </div>
+              <button class="btn btn-primary" style="width:100%;" onclick="submitContact(this)">Send Message</button>
+            </div>
+
+            <!-- STORY TIP -->
+            <div class="contact-panel" id="panel-pitch">
+              <div class="source-protection">
+                <div class="sp-label">Source Protection Notice</div>
+                <p>ACJ UNIBEN protects all confidential sources. You are not required to identify yourself. Submissions via this form are not logged against your identity. For maximum anonymity, use a non-personal email address.</p>
+              </div>
+              <div class="form-group">
+                <label>Name (Optional)</label>
+                <input type="text" placeholder="You may remain anonymous" />
+              </div>
+              <div class="form-group">
+                <label>Contact (Optional)</label>
+                <input type="text" placeholder="Email or phone — only if you are willing to be contacted" />
+              </div>
+              <div class="form-group">
+                <label>Story Category</label>
+                <select>
+                  <option value="">Select category</option>
+                  <option>Campus Affairs</option>
+                  <option>Administration / Governance</option>
+                  <option>Student Welfare</option>
+                  <option>Financial / Audit</option>
+                  <option>National / Political</option>
+                  <option>Media &amp; Press</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Describe the Story or Tip</label>
+                <textarea rows="6" placeholder="Describe what you know, what happened, who is involved, and what documents or evidence exist. Be as specific as possible. All information is treated with strict confidentiality."></textarea>
+              </div>
+              <div class="form-group">
+                <label>How did you come across this information?</label>
+                <select>
+                  <option value="">Select</option>
+                  <option>I was directly involved</option>
+                  <option>I witnessed it</option>
+                  <option>I have documents</option>
+                  <option>Someone told me</option>
+                  <option>I noticed it independently</option>
+                </select>
+              </div>
+              <button class="btn btn-primary" style="width:100%;background:var(--red-alert);" onclick="submitContact(this)">Submit Tip Confidentially</button>
+            </div>
+
+            <!-- PRESS -->
+            <div class="contact-panel" id="panel-press">
+              <div class="form-group">
+                <label>Name &amp; Title</label>
+                <input type="text" placeholder="e.g. Chidi Eze, Head of Communications" />
+              </div>
+              <div class="form-group">
+                <label>Organisation</label>
+                <input type="text" placeholder="Organisation name" />
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="official@organisation.com" />
+              </div>
+              <div class="form-group">
+                <label>Nature of Enquiry</label>
+                <select>
+                  <option value="">Select</option>
+                  <option>Press Accreditation</option>
+                  <option>Partnership / Collaboration</option>
+                  <option>Interview Request</option>
+                  <option>Official Statement / Comment</option>
+                  <option>Training / Workshop</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Details</label>
+                <textarea rows="4" placeholder="Provide relevant details about your enquiry."></textarea>
+              </div>
+              <button class="btn btn-primary" style="width:100%;" onclick="submitContact(this)">Send Enquiry</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL STRIP -->
+  <section style="background: var(--navy); padding: 2.5rem 0; text-align: center;">
+    <div class="container">
+      <span class="section-label gold" style="display:block;margin-bottom:1rem;">Follow ACJ UNIBEN</span>
+      <p style="font-size:0.85rem;color:rgba(255,255,255,0.6);margin-bottom:1.5rem;">Stay current with our reporting, events, and member news across all platforms.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="#" class="btn btn-gold">𝕏 Twitter / X</a>
+        <a href="#" class="btn" style="background:rgba(255,255,255,0.08);color:var(--white);">📷 Instagram</a>
+        <a href="#" class="btn" style="background:rgba(255,255,255,0.08);color:var(--white);">Facebook</a>
+        <a href="#" class="btn" style="background:rgba(255,255,255,0.08);color:var(--white);">▶ YouTube</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="../js/components.js"></script>
+  <script>
+    // Tab switching
+    document.querySelectorAll('.contact-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.contact-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.contact-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById('panel-' + tab.dataset.panel).classList.add('active');
+      });
+    });
+
+    // Check URL hash for pitch tab
+    if (window.location.hash === '#pitch') {
+      document.querySelectorAll('.contact-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.contact-panel').forEach(p => p.classList.remove('active'));
+      document.querySelector('[data-panel="pitch"]').classList.add('active');
+      document.getElementById('panel-pitch').classList.add('active');
+    }
+
+    // Form submit
+    function submitContact(btn) {
+      const form = btn.closest('.contact-panel');
+      form.innerHTML = `<div style="text-align:center;padding:3rem 1rem;">
+        <div style="font-size:3rem;margin-bottom:1rem;">✓</div>
+        <h3 style="font-family:var(--font-display);color:var(--navy);font-size:1.3rem;margin-bottom:0.5rem;">Message Received</h3>
+        <p style="color:var(--grey-dark);font-size:0.85rem;line-height:1.6;">The relevant ACJ UNIBEN desk will respond within 3 working days. Thank you for reaching out.</p>
+      </div>`;
+    }
+  </script>
+</body>
+</html>

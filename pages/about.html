@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About the Association of Campus Journalists, UNIBEN Chapter — our history, values, and leadership." />
+  <title>About Us | ACJ UNIBEN</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  <style>
+    .about-section { padding: 4rem 0; }
+    .about-section:nth-child(even) { background: var(--off-white); }
+    .about-section h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 900;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+    .about-section .lead { font-size: 0.95rem; color: var(--grey-dark); line-height: 1.8; max-width: 760px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+    @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+    .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    @media (max-width: 768px) { .stat-row { grid-template-columns: repeat(2, 1fr); } }
+    .stat-block { text-align: center; padding: 1.5rem; background: var(--navy); }
+    .stat-block .number { font-family: var(--font-label); font-size: 3rem; color: var(--gold); display: block; line-height: 1; }
+    .stat-block .label { font-size: 0.75rem; color: rgba(255,255,255,0.7); margin-top: 0.4rem; font-family: var(--font-label); letter-spacing: 0.1em; }
+    .mission-statement {
+      background: var(--navy);
+      padding: 4rem;
+      text-align: center;
+    }
+    .mission-statement h3 {
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 3vw, 2.2rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.4;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .mission-statement .gold-line { width: 60px; height: 3px; background: var(--gold); margin: 1.5rem auto; }
+    .mission-statement p { font-size: 0.9rem; color: rgba(255,255,255,0.65); max-width: 600px; margin: 0 auto; }
+  </style>
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <!-- HERO -->
+  <section class="about-hero">
+    <div class="container">
+      <span class="section-label gold">Who We Are</span>
+      <div class="gold-rule"></div>
+      <h1>The Voice of Campus Journalism at UNIBEN</h1>
+      <p class="lead">The Association of Campus Journalists, UNIBEN Chapter (ACJ UNIBEN) is the University of Benin's foremost student journalism body — training reporters, publishing original work, and holding power accountable since our founding.</p>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div style="background: var(--off-white); padding: 2rem 0;">
+    <div class="container">
+      <div class="stat-row" style="margin-top:0;">
+        <div class="stat-block">
+          <span class="number">200+</span>
+          <span class="label">Active Members</span>
+        </div>
+        <div class="stat-block">
+          <span class="number">12</span>
+          <span class="label">Publications</span>
+        </div>
+        <div class="stat-block">
+          <span class="number">8</span>
+          <span class="label">National Awards</span>
+        </div>
+        <div class="stat-block">
+          <span class="number">15+</span>
+          <span class="label">Years of Service</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MISSION STATEMENT -->
+  <div class="mission-statement">
+    <h3>"We exist not to report on the university — but to hold it to account. Every story we publish is an act of public service."</h3>
+    <div class="gold-line"></div>
+    <p>ACJ UNIBEN's Editorial Charter, adopted at our founding convocation</p>
+  </div>
+
+  <!-- ABOUT BODY -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <span class="section-label">Our Mission</span>
+          <span class="gold-bar"></span>
+          <h2>Journalism as a Public Good</h2>
+          <p class="lead" style="margin-bottom:1rem;">ACJ UNIBEN exists to produce rigorous, ethical, and independent journalism from within Nigeria's higher education system. We train student journalists to the professional standard, publish original investigations, features, and commentary, and advocate for press freedom across our campus and beyond.</p>
+          <p class="lead">We believe campus journalism is not a rehearsal. It is the real thing — and it matters.</p>
+        </div>
+        <div>
+          <span class="section-label">Our Vision</span>
+          <span class="gold-bar"></span>
+          <h2>The Standard, Not the Exception</h2>
+          <p class="lead" style="margin-bottom:1rem;">We are building the journalism organisation that UNIBEN deserves: independent, credible, and technically equipped to produce work that stands against any professional standard in Nigeria.</p>
+          <p class="lead">Our graduates carry ACJ's editorial discipline into every newsroom they enter. That is our longest-running impact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="about-section" id="values">
+    <div class="container">
+      <span class="section-label">What Drives Us</span>
+      <span class="gold-bar"></span>
+      <h2 style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;color:var(--navy);margin-bottom:2rem;">Our Core Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <h3>Independence</h3>
+          <p>ACJ UNIBEN's editorial line is set by its Editorial Board alone. No faculty administration, student body, or sponsor directs our coverage. Our editorial decisions are not negotiable.</p>
+        </div>
+        <div class="value-card">
+          <h3>Accuracy</h3>
+          <p>We verify before we publish. Every factual claim in our work is sourced, checked, and attributed. A correction is a sign of integrity — not a failure.</p>
+        </div>
+        <div class="value-card">
+          <h3>Accountability</h3>
+          <p>We cover those who hold power on this campus and in this country — not to antagonise them, but because that is what journalism is for. No institution is off limits.</p>
+        </div>
+        <div class="value-card">
+          <h3>Development</h3>
+          <p>Every ACJ UNIBEN member receives structured editorial training, workshop opportunities, and mentorship from working journalists in Nigerian media.</p>
+        </div>
+        <div class="value-card">
+          <h3>Inclusion</h3>
+          <p>Our newsroom reflects the diversity of the university. We actively recruit from all faculties, departments, and backgrounds — journalism belongs to everyone.</p>
+        </div>
+        <div class="value-card">
+          <h3>Ethics</h3>
+          <p>We operate under a written code of ethics aligned with the Nigerian Press Council's guidelines and the international standards of the Society of Professional Journalists.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTORY -->
+  <section class="about-section" id="history">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <span class="section-label">Our Story</span>
+          <span class="gold-bar"></span>
+          <h2>How ACJ UNIBEN Came to Be</h2>
+          <p class="lead">ACJ UNIBEN began as a small group of Mass Communication students who believed that the university campus had stories worth telling — and that students were capable of telling them properly. What started as an informal editorial collective grew into the organisation it is today: structured, published, and nationally recognised.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-year">Founded</span>
+            <h4>The Founding Convocation</h4>
+            <p>A group of journalism students formally constitutes ACJ UNIBEN, adopting an editorial charter and electing its first executive body.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">First Edition</span>
+            <h4>The Campus Voice Goes to Print</h4>
+            <p>ACJ UNIBEN publishes its first print edition — a 16-page broadsheet covering the university's budget crisis and student welfare failures.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">Digital Expansion</span>
+            <h4>Online Publication Launches</h4>
+            <p>ACJ UNIBEN launches its digital platform, expanding reach beyond the campus gate and introducing multimedia journalism to the organisation's output.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">National Recognition</span>
+            <h4>First NUJ Campus Media Award</h4>
+            <p>ACJ UNIBEN wins its first national award from the Nigeria Union of Journalists for excellence in campus journalism, validating the organisation's editorial standard.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">Today</span>
+            <h4>A Full-Service Journalism Organisation</h4>
+            <p>With over 200 members, a trained editorial board, and active multimedia production, ACJ UNIBEN stands as the benchmark for campus journalism in South-South Nigeria.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section class="about-section" id="leadership">
+    <div class="container">
+      <span class="section-label">The Team</span>
+      <span class="gold-bar"></span>
+      <h2 style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;color:var(--navy);margin-bottom:2rem;">Executive Leadership</h2>
+      <div class="leadership-grid">
+        <div class="leader-card">
+          <div class="leader-avatar">CO</div>
+          <h4>Collins Victory Odabi</h4>
+          <span>Founding President &amp; Editorial Board Chairman</span>
+        </div>
+        <div class="leader-card">
+          <div class="leader-avatar">EI</div>
+          <h4>[Editor-in-Chief]</h4>
+          <span>Editor-in-Chief</span>
+        </div>
+        <div class="leader-card">
+          <div class="leader-avatar">NS</div>
+          <h4>[News Editor]</h4>
+          <span>News Editor</span>
+        </div>
+        <div class="leader-card">
+          <div class="leader-avatar">ME</div>
+          <h4>[Managing Editor]</h4>
+          <span>Managing Editor</span>
+        </div>
+        <div class="leader-card">
+          <div class="leader-avatar">DO</div>
+          <h4>[Digital Officer]</h4>
+          <span>Digital &amp; Multimedia Officer</span>
+        </div>
+        <div class="leader-card">
+          <div class="leader-avatar">FO</div>
+          <h4>[Finance Officer]</h4>
+          <span>Financial Secretary</span>
+        </div>
+        <div class="leader-card">
+          <div class="leader-avatar">PO</div>
+          <h4>[PRO]</h4>
+          <span>Public Relations Officer</span>
+        </div>
+        <div class="leader-card">
+          <div class="leader-avatar">SO</div>
+          <h4>[Secretary]</h4>
+          <span>General Secretary</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background: var(--gold); padding: 4rem 0; text-align: center;">
+    <div class="container">
+      <h2 style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;color:var(--navy);margin-bottom:1rem;">Ready to Join the Newsroom?</h2>
+      <p style="color:var(--navy-mid);font-size:0.95rem;max-width:540px;margin:0 auto 2rem;">ACJ UNIBEN welcomes students from all departments. If you write, report, photograph, design, or simply care about the truth — there is a role for you here.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="membership.html" class="btn btn-primary">Apply for Membership</a>
+        <a href="contact.html" class="btn btn-outline">Contact the Editorial Board</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="../js/components.js"></script>
+</body>
+</html>

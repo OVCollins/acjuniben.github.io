@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ACJ UNIBEN Editorial — opinion, commentary, and investigative journalism from campus journalists at UNIBEN." />
+  <title>Editorial | ACJ UNIBEN</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  <style>
+    .editorial-hero { background: var(--navy); padding: 3.5rem 0 2.5rem; border-bottom: 4px solid var(--gold); }
+    .editorial-hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; color: var(--white); }
+    .editorial-hero p { font-size: 0.88rem; color: rgba(255,255,255,0.6); margin-top: 0.5rem; max-width: 600px; line-height: 1.6; }
+    .editorial-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+    @media (max-width: 768px) { .editorial-grid { grid-template-columns: 1fr; } }
+    .editorial-card {
+      background: var(--white);
+      border: 1px solid var(--grey-light);
+      padding: 2rem;
+      cursor: pointer;
+      transition: box-shadow 0.2s, transform 0.2s;
+      border-top: 4px solid var(--navy);
+    }
+    .editorial-card:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.09); transform: translateY(-2px); }
+    .editorial-card.gold-top { border-top-color: var(--gold); }
+    .editorial-card .big-quote {
+      font-family: var(--font-display);
+      font-size: 3.5rem;
+      color: var(--gold);
+      line-height: 0.6;
+      margin-bottom: 1rem;
+      opacity: 0.4;
+    }
+    .editorial-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1.35;
+      margin-bottom: 0.75rem;
+    }
+    .editorial-card p { font-size: 0.85rem; color: var(--grey-dark); line-height: 1.65; }
+    .editorial-card .author-row { display: flex; align-items: center; gap: 0.75rem; margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid var(--grey-light); }
+    .editorial-card .avatar { width: 36px; height: 36px; background: var(--navy); color: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-label); font-size: 0.8rem; }
+    .editorial-card .author-name { font-family: var(--font-display); font-size: 0.85rem; font-weight: 700; color: var(--navy); }
+    .editorial-card .author-role { font-size: 0.68rem; color: var(--grey-mid); }
+    .investigation-section { background: var(--off-white); padding: 3rem 0; }
+    .inv-card {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 1.5rem;
+      background: var(--white);
+      border: 1px solid var(--grey-light);
+      border-left: 4px solid var(--red-alert);
+      padding: 1.5rem;
+      margin-bottom: 1.2rem;
+      cursor: pointer;
+      transition: box-shadow 0.2s;
+    }
+    .inv-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.07); }
+    .inv-card img { width: 200px; height: 140px; object-fit: cover; }
+    .inv-card .inv-tag { font-family: var(--font-label); font-size: 0.65rem; letter-spacing: 0.15em; background: var(--red-alert); color: var(--white); padding: 3px 8px; display: inline-block; margin-bottom: 0.5rem; }
+    .inv-card h3 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 900; color: var(--navy); line-height: 1.3; margin-bottom: 0.5rem; }
+    .inv-card p { font-size: 0.82rem; color: var(--grey-dark); line-height: 1.55; }
+    .inv-card .meta { font-size: 0.7rem; color: var(--grey-mid); margin-top: 0.75rem; }
+    @media (max-width: 600px) { .inv-card { grid-template-columns: 1fr; } .inv-card img { width: 100%; height: 180px; } }
+    .pitch-box { background: var(--navy); padding: 3rem; text-align: center; margin-top: 3rem; }
+    .pitch-box h3 { font-family: var(--font-display); font-size: 1.6rem; font-weight: 900; color: var(--white); margin-bottom: 0.75rem; }
+    .pitch-box p { font-size: 0.88rem; color: rgba(255,255,255,0.65); max-width: 520px; margin: 0 auto 1.5rem; line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <div class="editorial-hero">
+    <div class="container">
+      <span class="section-label gold">Opinions &amp; Investigations</span>
+      <h1>Editorial</h1>
+      <p>Independent commentary, critical analysis, and investigative reporting from ACJ UNIBEN's editorial board and correspondent network.</p>
+    </div>
+  </div>
+
+  <!-- OPINIONS -->
+  <section style="padding: 3rem 0; background: var(--white);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Opinion &amp; Commentary</h2>
+        <span style="font-size:0.75rem;color:var(--grey-mid);">Views expressed are those of the authors</span>
+      </div>
+      <div class="editorial-grid">
+        <div class="editorial-card gold-top">
+          <div class="big-quote">"</div>
+          <h3>The Nigerian press is not dying — it is being suffocated by the very institutions it was built to hold accountable.</h3>
+          <p>When the government moves to regulate social media, it does not call it censorship. It calls it responsibility. When a university dismisses a student journalist, it does not call it suppression. It calls it discipline. The language changes but the intention does not. And campus journalists need to understand this dynamic before they can report it properly.</p>
+          <div class="author-row">
+            <div class="avatar">CO</div>
+            <div>
+              <div class="author-name">Collins Victory Odabi</div>
+              <div class="author-role">President, ACJ UNIBEN &nbsp;·&nbsp; June 25, 2025</div>
+            </div>
+          </div>
+        </div>
+        <div class="editorial-card">
+          <div class="big-quote">"</div>
+          <h3>Campus media is not a training ground. It is the frontline. We must stop treating student journalists as rehearsal acts.</h3>
+          <p>There is a patronising assumption embedded in Nigerian journalism education: that the work students do does not fully count until they are employed somewhere else. This assumption damages student journalism before it ever begins. When a student journalist uncovers an administrative scandal, breaks a welfare story, or holds a student union leader to account — that is real journalism. Not practice. Not preparation. The thing itself.</p>
+          <div class="author-row">
+            <div class="avatar">FA</div>
+            <div>
+              <div class="author-name">Femi Adisa</div>
+              <div class="author-role">Editor-in-Chief, The Campus Voice &nbsp;·&nbsp; June 20, 2025</div>
+            </div>
+          </div>
+        </div>
+        <div class="editorial-card">
+          <div class="big-quote">"</div>
+          <h3>Every time a university bans a campus publication, it announces its own fragility — not its authority.</h3>
+          <p>Institutions that are confident in their governance do not fear scrutiny. They expect it. They invite it. The instinct to suppress a campus newspaper, threaten a student editor, or withdraw the budget of a journalism association is the instinct of an administration that already knows what will be found if anyone looks. We should look anyway. That is the job.</p>
+          <div class="author-row">
+            <div class="avatar">RN</div>
+            <div>
+              <div class="author-name">Ruth Nnamdi</div>
+              <div class="author-role">Media Law Columnist &nbsp;·&nbsp; June 15, 2025</div>
+            </div>
+          </div>
+        </div>
+        <div class="editorial-card gold-top">
+          <div class="big-quote">"</div>
+          <h3>AI in the newsroom is not the threat. The threat is a journalism that is too comfortable with convenience to resist it.</h3>
+          <p>Artificial intelligence will do everything a lazy journalist does: summarise, paraphrase, and aggregate. What it cannot do is knock on a door, sit across from a source, read a face, follow a discrepancy through three weeks of document requests, or make the editorial judgement to publish a story that a powerful person does not want told. That is still the job. Let us protect it like one.</p>
+          <div class="author-row">
+            <div class="avatar">AO</div>
+            <div>
+              <div class="author-name">Amara Obi</div>
+              <div class="author-role">Investigations Editor, ACJ UNIBEN &nbsp;·&nbsp; June 10, 2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVESTIGATIONS -->
+  <section class="investigation-section" id="investigations">
+    <div class="container">
+      <div class="section-header">
+        <h2>Investigations</h2>
+        <span style="font-size:0.75rem;color:var(--grey-mid);">In-depth, document-based reporting</span>
+      </div>
+
+      <div class="inv-card">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=70" alt="Investigation" />
+        <div>
+          <span class="inv-tag">Investigation</span>
+          <h3>Ghost Students, Diverted Funds: How UNIBEN's Departmental Bursary System Lost ₦47 Million in Three Years</h3>
+          <p>A four-month investigation by ACJ UNIBEN reporters uncovered a pattern of inflated student rolls, duplicate bursary claims, and missing audit trails across six faculties. University officials were given 21 days to respond — they did not. The documents tell the story without them.</p>
+          <div class="meta">Amara Obi &amp; Tunde Adeyemi &nbsp;·&nbsp; June 15, 2025 &nbsp;·&nbsp; 18 min read &nbsp;·&nbsp; 4,812 reads</div>
+        </div>
+      </div>
+
+      <div class="inv-card">
+        <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=400&q=70" alt="" />
+        <div>
+          <span class="inv-tag">Investigation</span>
+          <h3>The Accommodation Lie: How UNIBEN Hostel Records Misrepresent the Scale of the Student Housing Crisis</h3>
+          <p>Official figures put hostel occupancy at 74%. Our investigation puts it at over 112% — a number that emerges when you count the mattresses on floors, the students sleeping in offices, and the bunk beds added to rooms designed for two. We went floor by floor.</p>
+          <div class="meta">Ebuka Nwosu &nbsp;·&nbsp; June 8, 2025 &nbsp;·&nbsp; 14 min read &nbsp;·&nbsp; 2,903 reads</div>
+        </div>
+      </div>
+
+      <div class="inv-card">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=70" alt="" />
+        <div>
+          <span class="inv-tag">Investigation</span>
+          <h3>Who Owns the Nigerian Campus Press? A Mapping of Editorial Independence Across 20 Universities</h3>
+          <p>ACJ UNIBEN's research desk reviewed editorial governance documents and interviewed editors at 20 campuses. In 13 of those institutions, the university administration controls the publication budget. In 7, editorial board appointments require administrative approval. In 4, stories have been spiked within the past two years. This is what campus media freedom actually looks like in Nigeria.</p>
+          <div class="meta">ACJ Research Desk &nbsp;·&nbsp; June 12, 2025 &nbsp;·&nbsp; 12 min read &nbsp;·&nbsp; 1,847 reads</div>
+        </div>
+      </div>
+
+      <!-- Pitch box -->
+      <div class="pitch-box">
+        <h3>Have a Story That Needs Investigating?</h3>
+        <p>ACJ UNIBEN's investigations team works on document-led, source-protected reporting. If you have a tip, a document, or a lead — contact us confidentially. All communications are protected.</p>
+        <a href="contact.html#pitch" class="btn btn-gold">Submit a Confidential Tip</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="../js/components.js"></script>
+</body>
+</html>

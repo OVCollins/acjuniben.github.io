@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join ACJ UNIBEN — the foremost campus journalism organisation at the University of Benin." />
+  <title>Membership | ACJ UNIBEN</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  <style>
+    .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+    @media (max-width: 768px) { .process-steps { grid-template-columns: repeat(2, 1fr); } }
+    .step { padding: 2rem 1.5rem; border-right: 1px solid var(--grey-light); text-align: center; background: var(--white); }
+    .step:last-child { border-right: none; }
+    .step-num { font-family: var(--font-label); font-size: 3rem; color: var(--gold); opacity: 0.4; display: block; line-height: 1; }
+    .step h4 { font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color: var(--navy); margin: 0.5rem 0 0.4rem; }
+    .step p { font-size: 0.78rem; color: var(--grey-dark); line-height: 1.5; }
+    .faq-item { border-bottom: 1px solid var(--grey-light); padding: 1.2rem 0; cursor: pointer; }
+    .faq-item h4 { font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color: var(--navy); display: flex; justify-content: space-between; align-items: center; }
+    .faq-item p { font-size: 0.83rem; color: var(--grey-dark); line-height: 1.6; margin-top: 0.7rem; display: none; }
+    .faq-item.open p { display: block; }
+    .faq-item .arrow { font-size: 0.8rem; color: var(--gold); transition: transform 0.2s; }
+    .faq-item.open .arrow { transform: rotate(180deg); }
+    .testimonial-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    @media (max-width: 768px) { .testimonial-row { grid-template-columns: 1fr; } }
+    .testimonial { padding: 1.5rem; background: var(--white); border: 1px solid var(--grey-light); border-top: 3px solid var(--gold); }
+    .testimonial p { font-family: var(--font-display); font-size: 0.92rem; font-style: italic; color: var(--navy); line-height: 1.5; margin-bottom: 1rem; }
+    .testimonial .source { font-size: 0.72rem; color: var(--grey-mid); font-family: var(--font-label); letter-spacing: 0.1em; }
+  </style>
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <!-- HERO -->
+  <div class="membership-hero">
+    <div class="container">
+      <span class="section-label gold">Become a Member</span>
+      <h1>Join the Newsroom That Matters</h1>
+      <p>ACJ UNIBEN is open to all University of Benin students. We do not require a journalism background — we require a commitment to accuracy, independence, and doing the work properly.</p>
+      <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="#apply" class="btn btn-gold">Apply Now</a>
+        <a href="about.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.4);color:var(--white);">Learn More About ACJ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHAT YOU GET -->
+  <section style="padding: 3rem 0; background: var(--off-white);">
+    <div class="container">
+      <span class="section-label">Membership Benefits</span>
+      <span class="gold-bar wide"></span>
+      <h2 style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;color:var(--navy);margin-bottom:2rem;">What ACJ Membership Gives You</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <div class="benefit-icon">📰</div>
+          <div>
+            <h4>A Published Byline</h4>
+            <p>Your reporting appears in The Campus Voice — a publication with national reach and editorial credibility that stands on any journalism CV.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">🎓</div>
+          <div>
+            <h4>Structured Editorial Training</h4>
+            <p>All members receive structured training in news writing, sourcing, interviewing, ethics, and media law — delivered by working journalists.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">🔗</div>
+          <div>
+            <h4>Industry Network</h4>
+            <p>Access to ACJ UNIBEN's alumni network across Nigerian media — journalists, editors, producers, and communications professionals at major outlets.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">🏆</div>
+          <div>
+            <h4>Awards Eligibility</h4>
+            <p>Members are eligible to represent ACJ UNIBEN at national campus journalism awards, including the NUJ Campus Media Awards and the ACP Nigeria Prize.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">🎙️</div>
+          <div>
+            <h4>Multimedia Access</h4>
+            <p>Members have access to the ACJ UNIBEN digital media lab — podcast equipment, camera gear, and editing software for multimedia journalism production.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">📋</div>
+          <div>
+            <h4>Leadership Opportunities</h4>
+            <p>From section editor to executive board member, ACJ UNIBEN develops journalists who can manage newsrooms — not just fill them.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section style="padding: 3rem 0; background: var(--white);">
+    <div class="container">
+      <span class="section-label">How to Join</span>
+      <span class="gold-bar"></span>
+      <h2 style="font-family:var(--font-display);font-size:clamp(1.4rem,3vw,2rem);font-weight:900;color:var(--navy);margin-bottom:2rem;">The Membership Process</h2>
+      <div class="process-steps" style="border:1px solid var(--grey-light);">
+        <div class="step">
+          <span class="step-num">01</span>
+          <h4>Submit Your Application</h4>
+          <p>Complete the membership form below. Tell us your department, your interests, and why journalism matters to you.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <h4>Editorial Review</h4>
+          <p>Your application is reviewed by the Editorial Board. We assess commitment and fit, not prior experience.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <h4>Orientation Session</h4>
+          <p>Accepted applicants attend a mandatory orientation covering ACJ's editorial standards, ethics policy, and newsroom structure.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">04</span>
+          <h4>Join the Newsroom</h4>
+          <p>You are assigned to a section, paired with a senior member, and given your first brief. Then you start reporting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section style="padding: 3rem 0; background: var(--off-white);">
+    <div class="container">
+      <span class="section-label">From Our Members</span>
+      <span class="gold-bar"></span>
+      <div class="testimonial-row">
+        <div class="testimonial">
+          <p>"ACJ UNIBEN is the only place on this campus where I was told that my questions were valid — and then taught how to ask them properly. That changed everything."</p>
+          <span class="source">— Former Investigations Correspondent, now at Channels Television</span>
+        </div>
+        <div class="testimonial">
+          <p>"I joined with zero journalism background. I left with a byline in three national publications, an NUJ card, and a job offer. ACJ does not waste your time."</p>
+          <span class="source">— Alumni, Digital Editor, The Punch Online</span>
+        </div>
+        <div class="testimonial">
+          <p>"The editorial standards here are serious. The criticism is sharp. The training is real. This is not a student club — this is a newsroom. Treat it like one."</p>
+          <span class="source">— Current Section Editor, Campus Affairs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLICATION FORM -->
+  <section class="form-section" id="apply">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:2rem;">
+        <span class="section-label">Application Form</span>
+        <h2 style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;color:var(--navy);margin-top:0.5rem;">Apply for Membership — 2025/2026 Session</h2>
+        <p style="font-size:0.85rem;color:var(--grey-mid);margin-top:0.5rem;">Applications are reviewed on a rolling basis. Allow 7 working days for a response.</p>
+      </div>
+      <div class="membership-form" id="membershipForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="e.g. Amara" />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="e.g. Obi" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="youremail@uniben.edu.ng" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+234 800 000 0000" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="department">Department</label>
+            <input type="text" id="department" placeholder="e.g. Mass Communication" />
+          </div>
+          <div class="form-group">
+            <label for="level">Current Level</label>
+            <select id="level">
+              <option value="">Select level</option>
+              <option>100 Level</option>
+              <option>200 Level</option>
+              <option>300 Level</option>
+              <option>400 Level</option>
+              <option>500 Level</option>
+              <option>Postgraduate</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="interest">Area of Interest</label>
+          <select id="interest">
+            <option value="">Select your primary interest</option>
+            <option>News Reporting</option>
+            <option>Investigative Journalism</option>
+            <option>Editorial / Opinion Writing</option>
+            <option>Photography</option>
+            <option>Multimedia / Video</option>
+            <option>Design &amp; Layout</option>
+            <option>Digital Media / Social Media</option>
+            <option>Research</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="statement">Why do you want to join ACJ UNIBEN? (100–200 words)</label>
+          <textarea id="statement" rows="5" placeholder="Tell us what draws you to journalism, what you want to contribute to ACJ UNIBEN, and what you hope to learn. Be direct and specific."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="sample">Do you have any previous writing, reporting, or media work to share? (Optional — URL or brief description)</label>
+          <input type="text" id="sample" placeholder="e.g. Link to article, blog, or social media journalism work" />
+        </div>
+        <div style="text-align:center;margin-top:1.5rem;">
+          <button class="btn btn-primary" onclick="submitForm()" style="padding:0.9rem 3rem;font-size:0.9rem;">Submit Application</button>
+        </div>
+        <p style="font-size:0.72rem;color:var(--grey-mid);text-align:center;margin-top:1rem;">By submitting, you confirm that all information provided is accurate and that you are a currently enrolled UNIBEN student.</p>
+      </div>
+      <div id="formSuccess" style="display:none;text-align:center;padding:3rem;background:var(--white);border:1px solid var(--grey-light);max-width:700px;margin:0 auto;">
+        <div style="font-size:3rem;margin-bottom:1rem;">✓</div>
+        <h3 style="font-family:var(--font-display);color:var(--navy);font-size:1.4rem;margin-bottom:0.75rem;">Application Received</h3>
+        <p style="color:var(--grey-dark);font-size:0.88rem;line-height:1.6;">Thank you for applying. The ACJ UNIBEN Editorial Board will review your application and contact you within 7 working days. In the meantime, follow us on social media for updates.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="padding: 3rem 0; background: var(--white);">
+    <div class="container" style="max-width:800px;">
+      <span class="section-label">Common Questions</span>
+      <span class="gold-bar"></span>
+      <h2 style="font-family:var(--font-display);font-size:clamp(1.4rem,3vw,2rem);font-weight:900;color:var(--navy);margin-bottom:2rem;">Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h4>Do I need a journalism background to apply? <span class="arrow">▼</span></h4>
+        <p>No. ACJ UNIBEN accepts students from all departments and all academic disciplines. We train our members from the ground up. What we look for is intellectual curiosity, a commitment to accuracy, and the willingness to be corrected.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Is there a membership fee? <span class="arrow">▼</span></h4>
+        <p>There is a nominal annual dues payment that covers production costs for The Campus Voice and member resources. The amount is confirmed at orientation and is kept at a level accessible to all students.</p>
+      </div>
+      <div class="faq-item">
+        <h4>How much time will ACJ UNIBEN require? <span class="arrow">▼</span></h4>
+        <p>Expect to commit a minimum of four hours per week during the session. Investigative reporting and editorial board roles will require more. We do not recommend ACJ UNIBEN as a passive membership — it is an active commitment.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Can I join if I am in my final year? <span class="arrow">▼</span></h4>
+        <p>Yes, though we encourage you to join as early as possible to get the full benefit of training and publishing opportunities. Final-year students are eligible to apply and will be placed immediately upon acceptance.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Can I join if I am a postgraduate student? <span class="arrow">▼</span></h4>
+        <p>Yes. ACJ UNIBEN accepts postgraduate students and often places them in senior correspondent or editorial advisory roles given their research and analytical experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="../js/components.js"></script>
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('open');
+      });
+    });
+
+    // Form submission
+    function submitForm() {
+      const required = ['firstName','lastName','email','department','level','interest','statement'];
+      let valid = true;
+      required.forEach(id => {
+        const el = document.getElementById(id);
+        if (!el.value.trim()) { el.style.borderColor = 'var(--red-alert)'; valid = false; }
+        else { el.style.borderColor = ''; }
+      });
+      if (!valid) { alert('Please complete all required fields.'); return; }
+      document.getElementById('membershipForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

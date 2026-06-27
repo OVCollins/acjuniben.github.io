@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ACJ UNIBEN News — campus, national, and media reporting from the University of Benin." />
+  <title>News | ACJ UNIBEN</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  <style>
+    .news-page-hero { background: var(--navy); padding: 3rem 0 2rem; border-bottom: 4px solid var(--gold); }
+    .news-page-hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; color: var(--white); }
+    .news-page-hero p { font-size: 0.9rem; color: rgba(255,255,255,0.6); margin-top: 0.5rem; }
+    .filter-bar { background: var(--white); border-bottom: 1px solid var(--grey-light); padding: 1rem 0; position: sticky; top: 60px; z-index: 50; }
+    .filter-inner { display: flex; gap: 0.6rem; overflow-x: auto; padding-bottom: 2px; align-items: center; }
+    .filter-btn {
+      font-family: var(--font-label);
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      padding: 0.4rem 1rem;
+      border: 1.5px solid var(--grey-light);
+      color: var(--grey-dark);
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all 0.2s;
+      background: var(--white);
+    }
+    .filter-btn:hover, .filter-btn.active { background: var(--navy); color: var(--white); border-color: var(--navy); }
+    .news-layout { display: grid; grid-template-columns: 1fr 300px; gap: 2.5rem; padding: 3rem 0; }
+    @media (max-width: 900px) { .news-layout { grid-template-columns: 1fr; } }
+    .article-list { display: flex; flex-direction: column; gap: 1px; background: var(--grey-light); }
+    .article-row {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 1.2rem;
+      background: var(--white);
+      padding: 1.2rem;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .article-row:hover { background: var(--off-white); }
+    .article-row img { width: 160px; height: 110px; object-fit: cover; flex-shrink: 0; }
+    .article-row h3 { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--navy); line-height: 1.3; margin: 0.4rem 0 0.5rem; }
+    .article-row p { font-size: 0.8rem; color: var(--grey-dark); line-height: 1.5; }
+    .article-row .meta { font-size: 0.7rem; color: var(--grey-mid); margin-top: 0.5rem; }
+    .article-row .meta .author { font-weight: 600; color: var(--navy); }
+    .load-more { text-align: center; padding: 2rem 0; }
+    @media (max-width: 600px) {
+      .article-row { grid-template-columns: 1fr; }
+      .article-row img { width: 100%; height: 180px; }
+    }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <div class="news-page-hero">
+    <div class="container">
+      <span class="section-label gold">ACJ UNIBEN</span>
+      <h1>News &amp; Reports</h1>
+      <p>Original reporting from the University of Benin and beyond — campus, national, and media affairs.</p>
+    </div>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <div class="container">
+      <div class="filter-inner">
+        <button class="filter-btn active" data-cat="all">All Categories</button>
+        <button class="filter-btn" data-cat="campus">Campus Affairs</button>
+        <button class="filter-btn" data-cat="national">National</button>
+        <button class="filter-btn" data-cat="media">Media &amp; Press</button>
+        <button class="filter-btn" data-cat="politics">Politics</button>
+        <button class="filter-btn" data-cat="science">Science &amp; Tech</button>
+        <button class="filter-btn" data-cat="sports">Sports</button>
+        <button class="filter-btn" data-cat="culture">Arts &amp; Culture</button>
+        <button class="filter-btn" data-cat="investigation">Investigations</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="news-layout">
+      <main>
+        <div class="article-list" id="articleList">
+
+          <article class="article-row" data-cat="campus">
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=300&q=70" alt="" />
+            <div>
+              <span class="tag">Campus Affairs</span>
+              <h3>UNIBEN Students Demand Transparency Over Senate Restructuring of Faculty Boards</h3>
+              <p>Student union leaders and press bodies have called for an emergency convocation session following unannounced changes to the faculty governance structure affecting over 12 departments.</p>
+              <div class="meta"><span class="author">Collins Odabi</span> &nbsp;·&nbsp; June 27, 2025 &nbsp;·&nbsp; 5 min read</div>
+            </div>
+          </article>
+
+          <article class="article-row" data-cat="national">
+            <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?w=300&q=70" alt="" />
+            <div>
+              <span class="tag navy">National</span>
+              <h3>Nigeria Drops Four Places on 2025 World Press Freedom Index — Advocacy Groups React</h3>
+              <p>Reporters Without Borders cited increased journalist detentions and growing self-censorship in broadcast media as primary drivers of Nigeria's continued decline in the global rankings.</p>
+              <div class="meta"><span class="author">Tunde Adeyemi</span> &nbsp;·&nbsp; June 21, 2025 &nbsp;·&nbsp; 7 min read</div>
+            </div>
+          </article>
+
+          <article class="article-row" data-cat="investigation">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&q=70" alt="" />
+            <div>
+              <span class="tag">Investigation</span>
+              <h3>Ghost Students, Diverted Funds: How UNIBEN's Departmental Bursary System Lost ₦47 Million in Three Years</h3>
+              <p>A four-month investigation uncovered inflated student rolls, duplicate bursary claims, and missing audit trails across six faculties. Officials have yet to respond.</p>
+              <div class="meta"><span class="author">Amara Obi &amp; Tunde Adeyemi</span> &nbsp;·&nbsp; June 15, 2025 &nbsp;·&nbsp; 18 min read</div>
+            </div>
+          </article>
+
+          <article class="article-row" data-cat="campus">
+            <img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=300&q=70" alt="" />
+            <div>
+              <span class="tag">Campus Affairs</span>
+              <h3>UNIBEN's Mass Communication Department Achieves Full NUC Accreditation — First Time in Eight Years</h3>
+              <p>The National Universities Commission granted full accreditation following an extensive panel review, clearing the department for all postgraduate programmes.</p>
+              <div class="meta"><span class="author">Amara Obi</span> &nbsp;·&nbsp; June 22, 2025 &nbsp;·&nbsp; 4 min read</div>
+            </div>
+          </article>
+
+          <article class="article-row" data-cat="media">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=300&q=70" alt="" />
+            <div>
+              <span class="tag">Media &amp; Press</span>
+              <h3>ACJ UNIBEN Correspondent Programme Selects 24 Student Journalists for South-South Coverage Beat</h3>
+              <p>The competitive scheme places student reporters in newsrooms across Edo, Delta, Rivers, and Bayelsa states for a three-month reporting residency.</p>
+              <div class="meta"><span class="author">ACJ Editorial Desk</span> &nbsp;·&nbsp; June 18, 2025 &nbsp;·&nbsp; 3 min read</div>
+            </div>
+          </article>
+
+          <article class="article-row" data-cat="science">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=300&q=70" alt="" />
+            <div>
+              <span class="tag">Science &amp; Tech</span>
+              <h3>Inside UNIBEN's New Digital Media Lab: A Newsroom Built for the Next Decade</h3>
+              <p>The newly commissioned facility includes podcast studios, drone equipment, and a real-time data journalism workstation funded by alumni donors.</p>
+              <div class="meta"><span class="author">Favour Eze</span> &nbsp;·&nbsp; June 20, 2025 &nbsp;·&nbsp; 6 min read</div>
+            </div>
+          </article>
+
+          <article class="article-row" data-cat="politics">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=300&q=70" alt="" />
+            <div>
+              <span class="tag navy">Politics</span>
+              <h3>SUG Election Results Delayed as Body Cites Logistical Failures at Two Polling Units</h3>
+              <p>UNIBEN's Student Union Government election has been suspended pending a review of disputed results from the Faculty of Engineering and Faculty of Law polling stations.</p>
+              <div class="meta"><span class="author">Ebuka Nwosu</span> &nbsp;·&nbsp; June 19, 2025 &nbsp;·&nbsp; 4 min read</div>
+            </div>
+          </article>
+
+          <article class="article-row" data-cat="sports">
+            <img src="https://images.unsplash.com/photo-1477281765962-ef34e8bb0967?w=300&q=70" alt="" />
+            <div>
+              <span class="tag navy">Sports</span>
+              <h3>UNIBEN Eagles Advance to NUGA Finals After Dramatic Penalty Shootout Against UI</h3>
+              <p>The football team secured a historic qualification following 120 minutes of play, with goalkeeper Kelvin Osaro saving three consecutive spot-kicks in Ibadan.</p>
+              <div class="meta"><span class="author">Blessing Osagie</span> &nbsp;·&nbsp; June 17, 2025 &nbsp;·&nbsp; 3 min read</div>
+            </div>
+          </article>
+
+          <article class="article-row" data-cat="culture">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=70" alt="" />
+            <div>
+              <span class="tag">Arts &amp; Culture</span>
+              <h3>Benin City Hosts West Africa's Largest Student Documentary Film Festival — ACJ Reports Live</h3>
+              <p>Over 40 student films from 11 countries competed across documentary, short fiction, and animation categories at this year's festival held at UNIBEN's Cultural Centre.</p>
+              <div class="meta"><span class="author">Chisom Uwandu</span> &nbsp;·&nbsp; June 16, 2025 &nbsp;·&nbsp; 5 min read</div>
+            </div>
+          </article>
+
+          <article class="article-row" data-cat="national">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&q=70" alt="" />
+            <div>
+              <span class="tag navy">National</span>
+              <h3>ASUU's 2025 Communiqué Demands Government Fund Tertiary Education Infrastructure</h3>
+              <p>The Academic Staff Union of Universities has issued its strongest statement yet on infrastructure failure, naming 23 federal universities where lecture theatres remain unfit for use.</p>
+              <div class="meta"><span class="author">Tunde Adeyemi</span> &nbsp;·&nbsp; June 14, 2025 &nbsp;·&nbsp; 6 min read</div>
+            </div>
+          </article>
+
+          <article class="article-row" data-cat="media">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=70" alt="" />
+            <div>
+              <span class="tag">Media &amp; Press</span>
+              <h3>Who Owns the Nigerian Campus Press? Editorial Independence Across 20 Universities</h3>
+              <p>ACJ UNIBEN's research desk reviewed editorial governance documents and interviewed editors at 20 campuses to map who — and what — controls student media in Nigeria.</p>
+              <div class="meta"><span class="author">ACJ Research Desk</span> &nbsp;·&nbsp; June 12, 2025 &nbsp;·&nbsp; 12 min read</div>
+            </div>
+          </article>
+
+          <article class="article-row" data-cat="campus">
+            <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=300&q=70" alt="" />
+            <div>
+              <span class="tag">Campus Affairs</span>
+              <h3>Hostel Crisis: Inside UNIBEN's Accommodation Shortage That Leaves 3,000 Students Off-Campus</h3>
+              <p>An investigation into accommodation records reveals a growing gap between available hostel beds and student demand — a gap that has widened by 40% in four years.</p>
+              <div class="meta"><span class="author">Ebuka Nwosu</span> &nbsp;·&nbsp; June 8, 2025 &nbsp;·&nbsp; 9 min read</div>
+            </div>
+          </article>
+
+        </div>
+        <div class="load-more">
+          <button class="btn btn-outline" id="loadMoreBtn">Load More Stories</button>
+        </div>
+      </main>
+
+      <!-- SIDEBAR -->
+      <aside>
+        <div class="sidebar-widget">
+          <h4>Most Read This Week</h4>
+          <div class="sidebar-list-item">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=120&q=60" alt="" />
+            <div><p>Ghost Students, Diverted Funds: The ₦47M Investigation</p><span class="meta">4,812 reads</span></div>
+          </div>
+          <div class="sidebar-list-item">
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=120&q=60" alt="" />
+            <div><p>UNIBEN Students Demand Transparency Over Faculty Restructuring</p><span class="meta">3,290 reads</span></div>
+          </div>
+          <div class="sidebar-list-item">
+            <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?w=120&q=60" alt="" />
+            <div><p>Nigeria Drops on 2025 Press Freedom Index</p><span class="meta">2,117 reads</span></div>
+          </div>
+        </div>
+        <div class="sidebar-widget">
+          <h4>Submit a Tip</h4>
+          <p style="font-size:0.82rem;color:var(--grey-dark);line-height:1.6;margin-bottom:1rem;">Have a story that needs to be told? The ACJ UNIBEN newsroom accepts tips from students, staff, and the public.</p>
+          <a href="contact.html#pitch" class="btn btn-primary" style="display:block;text-align:center;">Submit a Tip</a>
+        </div>
+        <div class="sidebar-widget">
+          <h4>Editorial Standards</h4>
+          <p style="font-size:0.82rem;color:var(--grey-dark);line-height:1.6;margin-bottom:1rem;">All ACJ UNIBEN reporting follows a strict editorial code. Read our full standards and corrections policy.</p>
+          <a href="about.html#values" class="btn btn-outline" style="display:block;text-align:center;">Our Standards</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+  <script src="../js/components.js"></script>
+  <script>
+    // Category filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const articles = document.querySelectorAll('.article-row');
+
+    function applyFilter(cat) {
+      articles.forEach(a => {
+        if (cat === 'all' || a.dataset.cat === cat) {
+          a.style.display = 'grid';
+        } else {
+          a.style.display = 'none';
+        }
+      });
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilter(btn.dataset.cat);
+      });
+    });
+
+    // Check URL param on load
+    const urlCat = new URLSearchParams(window.location.search).get('cat');
+    if (urlCat) {
+      filterBtns.forEach(b => {
+        if (b.dataset.cat === urlCat) { b.classList.add('active'); b.classList.remove('active'); }
+        b.classList.remove('active');
+      });
+      const matchBtn = document.querySelector(`.filter-btn[data-cat="${urlCat}"]`);
+      if (matchBtn) { matchBtn.classList.add('active'); applyFilter(urlCat); }
+    }
+  </script>
+</body>
+</html>
